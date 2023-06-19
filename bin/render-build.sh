@@ -1,13 +1,4 @@
-#!/bin/bash
+set -o errexit
 
-# フロントエンドのビルド
-cd frontend
-npm install
-npm run build
-
-# バックエンドの依存関係のインストール
-cd ../backend
 bundle install
-
-# データベースのマイグレーション
-bundle exec rails db:migrate
+bundle exec rake db:migrate
