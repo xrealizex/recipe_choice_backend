@@ -41,9 +41,9 @@ RUN gem install bundler && \
 COPY . .
 
 # Rails固有のエントリーポイント対応
-COPY entrypoint.sh /usr/bin/
+COPY recipe_backend/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 
 # Railsサーバーの起動
 EXPOSE 3010
