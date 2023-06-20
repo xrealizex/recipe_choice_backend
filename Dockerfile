@@ -41,7 +41,7 @@ RUN gem install bundler && \
 COPY . .
 
 # Rails固有のエントリーポイント対応
-COPY recipe_backend/entrypoint.sh /usr/bin/
+COPY COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 
