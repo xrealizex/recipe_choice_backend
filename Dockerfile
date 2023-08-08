@@ -1,5 +1,5 @@
 # 使用したいRubyのimageを指定
-FROM ruby:3.1.3
+FROM --platform=linux/x86_64 ruby:3.1.3
 
 ARG RUBYGEMS_VERSION=3.3.20
 
