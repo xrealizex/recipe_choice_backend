@@ -84,3 +84,4 @@ production:
   database: backend_production
   # username: backend
   password: <%= ENV["DB_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
