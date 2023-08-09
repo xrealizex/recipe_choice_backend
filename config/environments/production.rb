@@ -87,4 +87,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.hosts << "recipe-choice-backend-x552.onrender.com"
+
+  config.logger = ActiveSupport::Logger.new(Rails.root.join('log', 'render.log'))
 end
