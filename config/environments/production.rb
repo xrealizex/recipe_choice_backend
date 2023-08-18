@@ -86,7 +86,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.hosts << "recipe-choice-backend-x552.onrender.com"
+  config.hosts << "recipe-choice-backend-fzzt.onrender.com"
 
   config.logger = ActiveSupport::Logger.new(Rails.root.join('log', 'render.log'))
 end
